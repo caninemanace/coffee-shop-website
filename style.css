@@ -2,7 +2,7 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color: #9b9b9b;
+    background-color: #3d3d3d;
 }
 
 * {
@@ -45,7 +45,7 @@ h1 {
 .about {
     margin-top: 50px;
     width: 100%;
-    background-color: #9b9b9b;
+    background-color: #3d3d3d;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -76,19 +76,21 @@ p {
     font-size: large;
 }
 
-#iced-btn{
-    font-size: large;
+#iced-btn, #hot-btn {
+    font-size: 1rem;
+    background-color: #5a3d2b; 
+    color: #e5c29f;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
-#hot-btn{
-    font-size: large;
-}
-#iced-btn:hover{
-    background-color: rgb(139, 133, 133);
-    color: aliceblue;
-}
-#hot-btn:hover{
-    background-color: rgb(139, 133, 133);
-    color: aliceblue;
+
+#iced-btn:hover, #hot-btn:hover {
+    background-color: #8B4513;
+    color: white;
 }
 .container {
     width: 100%;
@@ -106,24 +108,32 @@ p {
     color: antiquewhite;
     padding: 20px;
     border-radius: 10px;
+    transition: all 0.9s ease-in-out;
+}
+.coffee-info:hover{
+    width: 60%;
+    float: left;
+    transition: all 0.9s ease-in-out;
 }
 
 .coffee-image {
-    background-color: #9b9b9b;
+    background-color: #3d3d3d;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    transition: all 0.9s ease-in-out;
 }
 
 .coffee-image img {
     width: 50%;
-    height: 70vh;
+    height: 50vh;
     object-fit: cover;
     border-radius: 10px;
+    transition: all 0.9s ease-in-out;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
